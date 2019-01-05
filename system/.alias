@@ -1,0 +1,23 @@
+# General
+
+alias reload="source ~/.bash_profile"
+alias myip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"
+alias edithosts='sudo $EDITOR /etc/hosts'
+alias reloadhosts='dscacheutil -flushcache'
+
+# Git
+
+alias gs='git status'
+alias ga='git add .'
+alias gpo='git push origin master'
+alias gpu='git pull upstream master'
+alias gc='git commit -m '
+alias gb='git branch'
+alias gcm='git checkout master'
+alias grso='git remote show origin'
+
+# Docker
+
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dcub='docker-compose up --build'
