@@ -19,5 +19,8 @@ alias grso='git remote show origin'
 # Docker
 
 alias dcu='docker-compose up'
+alias dcud='docker-compose up -d'
 alias dcd='docker-compose down'
 alias dcub='docker-compose up --build'
+alias drin='docker rmi $(docker images -f "dangling=true" -q)'
+
