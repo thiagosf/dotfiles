@@ -23,4 +23,5 @@ alias dcud='docker-compose up -d'
 alias dcd='docker-compose down'
 alias dcub='docker-compose up --build'
 alias drin='docker rmi $(docker images -f "dangling=true" -q)'
+alias dclean='docker system prune'
 
