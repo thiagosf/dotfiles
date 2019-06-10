@@ -1,7 +1,6 @@
 # Docker
 
 dshell() {
-  echo "hello"
   docker exec -it $@ bash;
 }
 
