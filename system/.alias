@@ -10,6 +10,7 @@ alias reloadhosts='dscacheutil -flushcache'
 alias gs='git status'
 alias ga='git add .'
 alias gpo='git push origin master'
+alias gpd='git push origin dev'
 alias gpu='git pull upstream master'
 alias gc='git commit -m '
 alias gb='git branch'
@@ -18,10 +19,10 @@ alias grso='git remote show origin'
 
 # Docker
 
-alias dcu='docker-compose up'
-alias dcud='docker-compose up -d'
+alias dcu='docker-compose up web'
+alias dcud='docker-compose up -d web'
 alias dcd='docker-compose down'
-alias dcub='docker-compose up --build'
+alias dcub='docker-compose up --build web'
 alias drin='docker rmi $(docker images -f "dangling=true" -q)'
-alias dclean='docker system prune'
+alias dclean='docker system prune --volumes'
 
