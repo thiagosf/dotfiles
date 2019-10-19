@@ -4,6 +4,7 @@ alias reload="source ~/.bash_profile"
 alias myip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"
 alias edithosts='sudo $EDITOR /etc/hosts'
 alias reloadhosts='dscacheutil -flushcache'
+alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
 
 # Git
 
