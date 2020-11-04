@@ -21,3 +21,9 @@ meteo() {
   fi
   curl -s "$LOCALE.wttr.in/$LOCATION"
 }
+
+# IP location
+
+iploc() {
+  curl https://ipinfo.io/$1
+}
