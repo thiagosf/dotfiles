@@ -27,4 +27,10 @@ alias dcd='docker-compose down'
 alias dcub='docker-compose up --build web'
 alias drin='docker rmi $(docker images -f "dangling=true" -q)'
 alias dclean='docker system prune --volumes'
+alias drshell='docker-compose run web /bin/bash'
+alias deshell='docker-compose exec web /bin/bash'
+
+# General
+# requires: $ brew install jq
+alias pscripts='cat package.json | jq .scripts'
 
