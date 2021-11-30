@@ -21,3 +21,24 @@ meteo() {
 iploc() {
   curl https://ipinfo.io/$1
 }
+
+# Git helpers
+
+openpr() {
+  # Ref:
+  # https://tighten.co/blog/open-github-pull-request-from-terminal/
+  github_url=`git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#https://#' -e 's@com:@com/@' -e 's%\.git$%%' | awk '/github/'`;
+  branch_name=`git symbolic-ref HEAD | cut -d"/" -f 3,4`;
+  pr_url=$github_url"/compare/$1..."$branch_name
+  open $pr_url;
+}
+
+# Base64
+
+b64d() {
+  echo $1 | base64 --decode;
+}
+
+b64e() {
+  echo $1 | base64;
+}

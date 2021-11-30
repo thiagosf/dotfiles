@@ -18,6 +18,7 @@ alias gc='git commit -m '
 alias gb='git branch'
 alias gcm='git checkout master'
 alias grso='git remote show origin'
+alias gph='git push -u origin HEAD'
 
 # Docker
 
